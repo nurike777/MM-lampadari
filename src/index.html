@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM Lampadari</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+<body>
+    <header class="header">
+        <div class="topbar">
+            <div class="topbar__wrap">
+                <a href="#" class="topbar__reserve" id="openModal">
+                    <span class="topbar__reserve-text">AREA RISERVATA</span>
+                    <img src="assets/images/icons/Oggetto_vettoriale_avanzato.svg" alt="Riservata">
+                </a>
+            </div>
+            <div class="modal" id="myModal">
+                <div class="modal__block">
+                    <div class="modal__header">
+                        <h2 class="modal__header-title">AREA RISERVATA</h2>
+                        <span class="modal__header-close">
+                            <img class="modal__header-close-img" src="assets/images/icons/close.svg" alt="Close">
+                        </span>
+                    </div>
+                    <div class="modal__wrap">
+                        <div class="modal__item">
+                            <h3 class="modal__title-form">ACCEDI</h3>
+                            <form action="#" method="POST" class="modal__form">
+                                <input type="email" class="modal__input" placeholder="E-mail">
+                                <div>
+                                    <input type="password" class="modal__input" placeholder="Password">
+                                </div>
+                                <button class="modal__button">ACCEDI</button>
+                                <a href="#" class="modal__link">Password dimenticata</a>
+                            </form>
+                        </div>
+                        <div class="modal__item">
+                            <h3 class="modal__title-form">REGISTRATI</h3>
+                            <form action="#" method="POST" class="modal__form">
+                                <input type="text" class="modal__input" placeholder="Nome">
+                                <input type="text" class="modal__input" placeholder="Cognome">
+                                <input type="email" class="modal__input" placeholder="E-mail">
+                                <input type="password" class="modal__input" placeholder="Password">
+                                <label class="modal__label"><input type="checkbox" class="modal__checkbox">Acconsento al trattamento dei dati</label>
+                                <label class="modal__label"><input type="checkbox" class="modal__checkbox">Mi iscrivo alla Newsletter</label>
+                                <button class="modal__button">ISCRIVITI</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topbar__row">
+                <a href="#" class="topbar__logo">
+                    <img class="topbar__logo-img" src="assets/images/logo.svg" alt="Logo">
+                </a>
+                <nav class="topbar__nav">
+                    <ul class="topbar__nav-list">
+                        <li class="topbar__nav-list-item"><a href="#" class="topbar__nav-list-link">HOME</a></li>
+                        <li class="topbar__nav-list-item"><a href="#" class="topbar__nav-list-link">AZIENDA</a>
+                            <ul class="topbar__nav-list-dropdown">
+                                <li class="topbar__nav-list-dropdown_item"><a href="#" class="topbar__nav-list-dropdown_item-link">STORIA</a></li>
+                                <li class="topbar__nav-list-dropdown_item"><a href="#" class="topbar__nav-list-dropdown_item-link">MM DESIGN</a></li>
+                                <li class="topbar__nav-list-dropdown_item"><a href="#" class="topbar__nav-list-dropdown_item-link">DESIGNER</a></li>
+                                <li class="topbar__nav-list-dropdown_item"><a href="#" class="topbar__nav-list-dropdown_item-link">CERTIFICAZIONI</a></li>
+                            </ul>
+                        </li>
+                        <li class="topbar__nav-list-item"><a href="#" class="topbar__nav-list-link">COLLEZIONI</a></li>
+                        <li class="topbar__nav-list-item"><a href="#" class="topbar__nav-list-link">NEWS</a></li>
+                        <li class="topbar__nav-list-item"><a href="#" class="topbar__nav-list-link">CONTATTI</a></li>
+                    </ul>
+                </nav>  
+                <div class="topbar__nav-button">
+                    <div class="topbar__menu-icon-wrapper">
+                        <div class="topbar__menu-icon"></div>
+                    </div>
+                </div>     
+                <div class="topbar__menu">
+                    <nav class="topbar__menu-nav">
+                        <ul class="topbar__menu-nav-list">
+                            <li class="topbar__menu-nav-item"><a href="#" class="topbar__menu-nav-link">HOME</a></li>
+                            <li class="topbar__menu-nav-item"><a href="#" class="topbar__menu-nav-link">AZIENDA</a></li>
+                            <li class="topbar__menu-nav-item"><a href="#" class="topbar__menu-nav-link">COLLEZIONI</a></li>
+                            <li class="topbar__menu-nav-item"><a href="#" class="topbar__menu-nav-link">NEWS</a></li>
+                            <li class="topbar__menu-nav-item"><a href="#" class="topbar__menu-nav-link">CONTATTI</a></li>
+                        </ul>
+                    </nav>
+                </div>      
+            </div>     
+        </div>
+
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper__img" src="assets/images/Fabulous-Modern-Pendant-Lamp-For-Dining-Room.jpg" alt="Slider">
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="slider__overlay">
+                <h3 class="slider__overlay-title">Lampadari contemporanei</h3>
+                <p class="slider__overlay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+            </div>
+        </div>
+        
+        <div class="promo">
+            <div class="promo__up">
+                <button class="promo__up-button" onclick="rotateBtn()">
+                    <img src="assets/images/FRECCIA.svg" alt="up" class="promo__up-img">
+                </button>
+            </div>
+            <div class="promo-row">
+                <div class="promo-column1">
+                    <h4 class="promo__title">Stai pensando ad un progetto?</h4>
+                    <p class="promo__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+                    <div class="promo-wrap">
+                        <a href="#" class="promo__link promo__link_line promo__link_white">Approfondisci</a>
+                    </div>
+                </div>
+                <div class="promo-column2">
+                    <h4 class="promo__title">Vi aspettiamo alla fiera Euroluce </h4>
+                    <p class="promo__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+                    <div class="promo-wrap">
+                        <a href="#" class="promo__link">Approfondisci</a>
+                    </div>
+                </div>
+                <div class="promo-column3">
+                    <h4 class="promo__title promo__title_white">Scopri la nuova collezione</h4>
+                    <p class="promo__description promo__description_white-fe">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+                    <div class="promo-wrap">
+                        <a href="#" class="promo__link promo__link_white">Approfondisci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__column">
+                    <h3 class="footer__title">Lampadari made in italy</h3>
+                    <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">lampadari artigianali</h3>
+                    <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">45 anni di esperienza</h3>
+                    <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title footer__title_bottom">NEWSLETTER</h3>
+                    <div class="footer__wrap">
+                        <form action="#" method="POST" class="footer__form">
+                            <input type="text" class="footer__input" placeholder="Nome e Cognome">
+                            <div>
+                                <input type="email" class="footer__input" placeholder="Email">
+                            </div>
+                            <label class="footer__label"><input type="checkbox" class="footer__checkbox">Acconsento al trattamento dei dati</label>
+                            <button class="footer__button" type="submit">ISCRIVITI</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-wide">
+            <div class="footer__cop">
+                <div class="footer__info">
+                    <span class="footer__info-text">MMLAMPADARI srl</span>
+                    <span class="footer__info-text">Via Feltrina 00</span>
+                    <span class="footer__info-text">31111 Pederobba  
+                        <span class="footer__info-text_tv">(TV)</span>
+                    </span>
+                    <span class="footer__info-text">0423.123456</span>
+                    <span class="footer__info-text">info@mmlampadari.mm</span>
+                    <span class="footer__info-text">P.IVA 04123456789</span>
+                </div>
+                <div class="footer__wrap_bottom">
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-item">
+                            <img src="assets/images/icons/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="footer__social-item">
+                            <img src="assets/images/icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="footer__social-item">
+                            <img src="assets/images/icons/p.png" alt="P">
+                        </a>
+                    </div>
+                    <div class="footer__lang">
+                        <a href="#" class="footer__lang-link">ita</a>
+                        <span class="footer__lang-line"></span>
+                        <a href="#" class="footer__lang-link">eng</a>
+                        <span class="footer__lang-line"></span>
+                        <a href="#" class="footer__lang-link">deu</a>
+                        <span class="footer__lang-line"></span>
+                        <a href="#" class="footer__lang-link">ryc</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
