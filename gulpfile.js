@@ -6,7 +6,6 @@ let sourcemaps = require('gulp-sourcemaps');
 let browserSync = require('browser-sync').create();
 
 function css_style(done) {
-    
     gulp.src('./src/scss/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -28,7 +27,7 @@ function css_style(done) {
 
 function sync(done) {
     browserSync.init({
-        server: { 
+        server: {
             baseDir: "./src"
         },
         port: 3000
